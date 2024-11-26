@@ -1,0 +1,895 @@
+{
+    "intents": [
+      {
+        "tag": "greeting",
+        "patterns": [
+          "Hi",
+          "Hello",
+          "Hey",
+          "What's up?",
+          "How are you?"
+        ],
+        "responses": [
+          "Hello! How can I assist you today?",
+          "Hi! What can I do for you?",
+          "Greetings! How may I help you?"
+        ]
+      },
+      {
+        "tag": "goodbye",
+        "patterns": [
+          "Goodbye",
+          "See you later",
+          "Farewell"
+        ],
+        "responses": [
+          "Goodbye! Have a great day!",
+          "See you later! Feel free to ask if you need anything!"
+        ]
+      },
+      {
+        "tag":"budget",
+        "patterns":[
+          "calculate budget the budget from {city} to {city} by{vechile}"
+        ],
+        "respnoses":[
+          "bduget=5677"
+        ]
+      },
+      {
+        "tag": "city_info",
+      "patterns": [
+        "Where can I stay in {city}?",
+        "What to do in {city}?",
+        "Find me accommodations in {city}",
+        "Show me places to eat in {city}",
+        "What can I visit in {city}?",
+        "Tell me about places in {city}",
+        "What to do in {city}?",
+        "Where can I stay in {city}?",
+        "Find me accommodations in {city}",
+        "Show me dining options in {city}"
+      ],
+      "responses": [
+        "Here are some options for {city}: {data}",
+        "You might want to check out these places in {city}: {data}"
+        ],
+        "data": {
+          "tamilnadu": {
+            "places_to_visit": [
+              {
+                "name": "Meenakshi Amman Temple, Madurai",
+                "description": "One of the most famous temples in India, dedicated to Goddess Meenakshi (Parvati) and Lord Sundareswarar (Shiva). Known for its intricate architecture and towering gopurams adorned with thousands of colorful sculptures, this temple is a marvel of Dravidian architecture.",
+                "image": "/static/images/meenakshi.jpeg",
+                "budget": "$18"
+              },
+              {
+                "name": "Brihadeeswarar Temple, Thanjavur",
+                "description": "Also known as the Big Temple, this UNESCO World Heritage Site is dedicated to Lord Shiva and is an architectural masterpiece built by the Chola dynasty. The massive Nandi statue and the towering vimana (temple tower) are highlights of this ancient temple.",
+                "image": "/static/images/briha.jpeg",
+                "budget": "$0"
+              },
+              {
+                "name": "Ramanathaswamy Temple, Rameswaram",
+                "description": "This temple is one of the twelve Jyotirlinga temples dedicated to Lord Shiva and is part of the Char Dham pilgrimage. Famous for its longest corridor among Hindu temples, it is a place of deep spiritual significance in Hindu mythology.",
+                "image": "/static/images/ramna.jpeg",
+                "budget": "$25"
+              },
+              {
+                "name": "Sri Ranganathaswamy Temple, Srirangam",
+                "description": "This temple is one of the twelve Jyotirlinga temples dedicated to Lord Shiva and is part of the Char Dham pilgrimage. Famous for its longest corridor among Hindu temples, it is a place of deep spiritual significance in Hindu mythology.",
+                "image": "/static/images/ranga.jpeg",
+                "budget": "$0"
+              },
+              {
+                "name": "Kanchi Kailasanathar Temple, Kanchipuram",
+                "description": "This ancient temple, dedicated to Lord Shiva, is the oldest structure in Kanchipuram and is famous for its unique architecture and beautiful sandstone carvings. It is a peaceful place, reflecting the grandeur of the Pallava dynasty.",
+                "image": "/static/images/kanchi.jpeg",
+                "budget": "$0"
+              },
+              {
+                "name": "Annamalaiyar Temple, Tiruvannamalai",
+                "description": "Dedicated to Lord Shiva, this temple is associated with the sacred Annamalai Hill and is an important site for the Karthigai Deepam festival. The temple has grand gopurams and is known for the Girivalam (circumambulation) ritual around the hill.",
+                "image": "/static/images/anna.jpeg",
+                "budget": "$0"
+              },
+              {
+                "name": "Nataraja Temple, Chidambaram",
+                "description": "This temple is dedicated to Lord Shiva in his form as Nataraja, the cosmic dancer. Known for its depiction of the Chidambara Rahasya (a hidden representation of the divine), the temple is an important pilgrimage center for Shaivites and a symbol of Tamil architecture and culture.",
+                "image": "/static/images/nataraj.jpeg",
+                "budget": "$0"
+              },
+              {
+                "name": "Jambukeswarar Temple, Thiruvanaikaval",
+                "description": "Situated near Tiruchirappalli, this temple is dedicated to Lord Shiva as Jambukeswarar and represents the element of water. Built by the Cholas, it is one of the five Pancha Bhoota Sthalas, representing the five elements of nature.",
+                "image": "/static/images/jambu.jpeg",
+                "budget": "$0"
+              },
+              {
+                "name": "Kumari Amman Temple, Kanyakumari",
+                "description": "Located at the southern tip of India, this temple is dedicated to Goddess Kanya Kumari (Parvati in her virgin form). The temple is beautifully situated with views of the confluence of the Bay of Bengal, the Indian Ocean, and the Arabian Sea.",
+                "image": "/static/images/kumari.jpeg",
+                "budget": "$0"
+              },
+              {
+                "name": "Murugan Temple, Palani",
+                "description": "One of the six abodes of Lord Murugan, Palani is a popular pilgrimage destination. Located atop a hill, the temple is known for its divine ambiance and is associated with the Dhandayuthapani Swamy, a form of Lord Murugan.",
+                "image": "/static/images/muragan.jpeg",
+                "budget": "$0"
+              },
+              {
+                "name": "Srivilliputhur Andal Temple, Srivilliputhur",
+                "description": "This temple is dedicated to Goddess Andal, one of the twelve Alvars and a prominent figure in Vaishnavism. The temple tower is featured on the Tamil Nadu state emblem, and it is known for its towering gopuram and spiritual significance.",
+                "image": "/static/images/andal.jpeg",
+                "budget": "$0"
+              },
+              {
+                "name": "Ekambareswarar Temple, Kanchipuram",
+                "description": "Another significant temple in Kanchipuram, dedicated to Lord Shiva. It is part of the Pancha Bhoota Stalams and represents the element of earth. The massive temple complex and the ancient mango tree within the premises add to its uniqueness.",
+                "image": "/static/images/ekbam.jpeg",
+                "budget": "$0"
+              },
+              {
+                "name": "Thillai Nataraja Temple, Chidambaram",
+                "description": "This unique temple in Chidambaram is famous for the Chidambaram Rahasya and is dedicated to Shiva in the form of Nataraja, symbolizing the cosmic dance. The temple is also famous for its connection to classical dance forms like Bharatanatyam.",
+                "image": "/static/images/thillai.jpeg",
+                "budget": "$0"
+              }
+
+            ],
+            "accommodations": [
+              {
+                "name": "The Ritz-Carlton",
+                "description": "Luxury hotel in Central Park.",
+                "image": "url_to_image_ritz.jpg",
+                "price_range": "$500 - $800"
+              },
+              {
+                "name": "Hyatt Place",
+                "description": "Comfortable stay near Times Square.",
+                "image": "url_to_image_hyatt.jpg",
+                "price_range": "$200 - $400"
+              },
+              {
+                "name": "Hostel in NYC",
+                "description": "Budget-friendly option for travelers.",
+                "image": "url_to_image_hostel.jpg",
+                "price_range": "$30 - $100"
+              },
+              {
+                "name": "Marriott Marquis",
+                "description": "Modern hotel with great views.",
+                "image": "url_to_image_marriott.jpg",
+                "price_range": "$250 - $450"
+              },
+              {
+                "name": "The Standard, High Line",
+                "description": "Chic hotel in the Meatpacking District.",
+                "image": "url_to_image_standard.jpg",
+                "price_range": "$300 - $600"
+              }
+            ],
+            "dining_options": [
+              {
+                "name": "Katz's Delicatessen",
+                "description": "Famous deli known for pastrami sandwiches.",
+                "image": "url_to_image_katz.jpg",
+                "price_range": "$10 - $20"
+              },
+              {
+                "name": "Nobu",
+                "description": "High-end Japanese restaurant.",
+                "image": "url_to_image_nobu.jpg",
+                "price_range": "$50 - $100"
+              },
+              {
+                "name": "Shake Shack",
+                "description": "Popular burger chain with a cult following.",
+                "image": "url_to_image_shakeshack.jpg",
+                "price_range": "$10 - $15"
+              },
+              {
+                "name": "Le Bernardin",
+                "description": "Renowned seafood restaurant.",
+                "image": "url_to_image_lebernardin.jpg",
+                "price_range": "$60 - $150"
+              },
+              {
+                "name": "Joe's Pizza",
+                "description": "Iconic pizza place in Greenwich Village.",
+                "image": "url_to_image_joespizza.jpg",
+                "price_range": "$2 - $5"
+              }
+            ]
+          },
+          "paris": {
+            "places_to_visit": [
+              {
+                "name": "Eiffel Tower",
+                "description": "The most iconic landmark in Paris.",
+                "image": "url_to_image_eiffel.jpg",
+                "budget": "$25"
+              },
+              {
+                "name": "Louvre Museum",
+                "description": "World's largest art museum.",
+                "image": "url_to_image_louvre.jpg",
+                "budget": "$17"
+              },
+              {
+                "name": "Notre-Dame Cathedral",
+                "description": "Famous Gothic cathedral.",
+                "image": "url_to_image_notredame.jpg",
+                "budget": "$0"
+              },
+              {
+                "name": "Montmartre",
+                "description": "Historic district known for its bohemian charm.",
+                "image": "url_to_image_montmartre.jpg",
+                "budget": "$0"
+              },
+              {
+                "name": "Champs-Élysées",
+                "description": "Famous avenue known for shopping.",
+                "image": "url_to_image_champs.jpg",
+                "budget": "$0"
+              }
+            ],
+            "accommodations": [
+              {
+                "name": "Shangri-La Hotel",
+                "description": "Luxury hotel with views of the Eiffel Tower.",
+                "image": "url_to_image_shangrila.jpg",
+                "price_range": "$800 - $1200"
+              },
+              {
+                "name": "Le Meurice",
+                "description": "Luxury hotel with a Michelin-starred restaurant.",
+                "image": "url_to_image_lemeurice.jpg",
+                "price_range": "$500 - $800"
+              },
+              {
+                "name": "Generator Paris",
+                "description": "Trendy hostel with rooftop views.",
+                "image": "url_to_image_generator.jpg",
+                "price_range": "$30 - $80"
+              },
+              {
+                "name": "Hotel des Arts Montmartre",
+                "description": "Charming hotel in a bohemian neighborhood.",
+                "image": "url_to_image_hotelart.jpg",
+                "price_range": "$100 - $200"
+              },
+              {
+                "name": "Hôtel du Petit Moulin",
+                "description": "Chic hotel in the Marais district.",
+                "image": "url_to_image_petitmoulin.jpg",
+                "price_range": "$200 - $350"
+              }
+            ],
+            "dining_options": [
+              {
+                "name": "Le Jules Verne",
+                "description": "Gourmet restaurant on the second floor of the Eiffel Tower.",
+                "image": "url_to_image_julesverne.jpg",
+                "price_range": "$100 - $200"
+              },
+              {
+                "name": "Café de Flore",
+                "description": "Historic café known for its famous patrons.",
+                "image": "url_to_image_flore.jpg",
+                "price_range": "$10 - $25"
+              },
+              {
+                "name": "L'Atelier de Joël Robuchon",
+                "description": "Two Michelin-starred restaurant.",
+                "image": "url_to_image_robotuchon.jpg",
+                "price_range": "$100 - $300"
+              },
+              {
+                "name": "Chez Janou",
+                "description": "Charming bistro with a Provençal menu.",
+                "image": "url_to_image_janou.jpg",
+                "price_range": "$30 - $60"
+              },
+              {
+                "name": "Le Relais de l'Entrecôte",
+                "description": "Famous for its steak-frites.",
+                "image": "url_to_image_relais.jpg",
+                "price_range": "$25 - $50"
+              }
+            ]
+          },
+          "tokyo": {
+            "places_to_visit": [
+              {
+                "name": "Tokyo Tower",
+                "description": "Iconic symbol of Tokyo.",
+                "image": "/static/images/bgpic.avif",
+                "budget": "$20"
+              },
+              {
+                "name": "Senso-ji Temple",
+                "description": "Historic temple in Asakusa.",
+                "image": "/static/images/bgpic.avif",
+                "budget": "$0"
+              },
+              {
+                "name": "Shibuya Crossing",
+                "description": "Famous pedestrian scramble.",
+                "image": "/static/images/bgpic.avif",
+                "budget": "$0"
+              },
+              {
+                "name": "Meiji Shrine",
+                "description": "Shinto shrine dedicated to Emperor Meiji.",
+                "image": "/static/images/bgpic.avif",
+                "budget": "$0"
+              },
+              {
+                "name": "Akihabara",
+                "description": "District famous for electronics and otaku culture.",
+                "image": "/static/images/bgpic.avif",
+                "budget": "$0"
+              }
+            ],
+            "accommodations": [
+              {
+                "name": "The Peninsula Tokyo",
+                "description": "Luxury hotel with modern amenities.",
+                "image": "/static/images/image4.avif",
+                "price_range": "$400 - $600"
+              },
+              {
+                "name": "Shinjuku Granbell Hotel",
+                "description": "Stylish hotel in the heart of Shinjuku.",
+                "image": "/static/images/image4.avif",
+                "price_range": "$150 - $300"
+              },
+              {
+                "name": "Capsule Hotel Anshin Oyado",
+                "description": "Unique capsule hotel experience.",
+                "image": "/static/images/bgpic.avif",
+                "price_range": "$25 - $50"
+              },
+              {
+                "name": "Park Hotel Tokyo",
+                "description": "Modern hotel with artistic designs.",
+                "image": "/static/images/bgpic.avif",
+                "price_range": "$200 - $350"
+              },
+              {
+                "name": "Hotel Gracery Shinjuku",
+                "description": "Famous for its Godzilla-themed rooms.",
+                "image": "/static/images/bgpic.avif",
+                "price_range": "$150 - $250"
+              }
+            ],
+            "dining_options": [
+              {
+                "name": "Sukiyabashi Jiro",
+                "description": "World-renowned sushi restaurant.",
+                "image": "/static/images/bgpic.avif",
+                "price_range": "$300 - $500"
+              },
+              {
+                "name": "Ichiran Ramen",
+                "description": "Famous ramen chain with a unique dining experience.",
+                "image": "/static/images/bgpic.avif",
+                "price_range": "$10 - $20"
+              },
+              {
+                "name": "Narisawa",
+                "description": "Two Michelin-starred restaurant focusing on sustainability.",
+                "image": "/static/images/bgpic.avif",
+                "price_range": "$150 - $400"
+              },
+              {
+                "name": "Ginza Kyubey",
+                "description": "High-end sushi restaurant in Ginza.",
+                "image": "/static/images/bgpic.avif",
+                "price_range": "$100 - $300"
+              },
+              {
+                "name": "Tsukiji Outer Market",
+                "description": "Great spot to sample fresh seafood.",
+                "image": "/static/images/bgpic.avif",
+                "price_range": "$5 - $50"
+              }
+            ]
+          },
+          "london": {
+            "places_to_visit": [
+              {
+                "name": "British Museum",
+                "description": "Home to a vast collection of world art and artifacts.",
+                "image": "url_to_image_britishmuseum.jpg",
+                "budget": "$0"
+              },
+              {
+                "name": "Tower of London",
+                "description": "Historic castle and former royal palace.",
+                "image": "url_to_image_toweroflondon.jpg",
+                "budget": "$30"
+              },
+              {
+                "name": "Buckingham Palace",
+                "description": "Official residence of the British monarch.",
+                "image": "url_to_image_buckingham.jpg",
+                "budget": "$0"
+              },
+              {
+                "name": "London Eye",
+                "description": "Iconic giant Ferris wheel on the South Bank of the River Thames.",
+                "image": "url_to_image_londoneye.jpg",
+                "budget": "$30"
+              },
+              {
+                "name": "Westminster Abbey",
+                "description": "Famous Gothic church and burial site of British monarchs.",
+                "image": "url_to_image_westminster.jpg",
+                "budget": "$30"
+              }
+            ],
+            "accommodations": [
+              {
+                "name": "The Savoy",
+                "description": "Luxurious hotel with historic significance.",
+                "image": "url_to_image_savoy.jpg",
+                "price_range": "$500 - $800"
+              },
+              {
+                "name": "The Hoxton, Shoreditch",
+                "description": "Stylish hotel with modern amenities.",
+                "image": "url_to_image_hoxton.jpg",
+                "price_range": "$200 - $400"
+              },
+              {
+                "name": "YHA London Central",
+                "description": "Budget-friendly hostel in a prime location.",
+                "image": "url_to_image_yha.jpg",
+                "price_range": "$30 - $50"
+              },
+              {
+                "name": "Hilton London Metropole",
+                "description": "Modern hotel with great views.",
+                "image": "url_to_image_hilton.jpg",
+                "price_range": "$200 - $350"
+              },
+              {
+                "name": "Shangri-La at The Shard",
+                "description": "Luxury hotel with stunning views of the London skyline.",
+                "image": "url_to_image_shangrila_shard.jpg",
+                "price_range": "$500 - $1000"
+              }
+            ],
+            "dining_options": [
+              {
+                "name": "Dishoom",
+                "description": "Popular restaurant known for its Bombay cuisine.",
+                "image": "url_to_image_dishoom.jpg",
+                "price_range": "$15 - $30"
+              },
+              {
+                "name": "Hawksmoor",
+                "description": "Renowned steakhouse in London.",
+                "image": "url_to_image_hawksmoor.jpg",
+                "price_range": "$50 - $100"
+              },
+              {
+                "name": "Sketch",
+                "description": "Unique restaurant with a whimsical interior.",
+                "image": "url_to_image_sketch.jpg",
+                "price_range": "$40 - $150"
+              },
+              {
+                "name": "Nobu London",
+                "description": "Famous Japanese restaurant with a luxurious ambiance.",
+                "image": "url_to_image_nobulondon.jpg",
+                "price_range": "$100 - $300"
+              },
+              {
+                "name": "Borough Market",
+                "description": "Iconic food market with diverse culinary offerings.",
+                "image": "url_to_image_boroughmarket.jpg",
+                "price_range": "$5 - $50"
+              }
+            ]
+          },
+          "sydney": {
+            "places_to_visit": [
+              {
+                "name": "Sydney Opera House",
+                "description": "Iconic performing arts center.",
+                "image": "url_to_image_opera.jpg",
+                "budget": "$40"
+              },
+              {
+                "name": "Sydney Harbour Bridge",
+                "description": "Famous bridge with stunning views.",
+                "image": "url_to_image_bridge.jpg",
+                "budget": "$15"
+              },
+              {
+                "name": "Bondi Beach",
+                "description": "Famous beach known for surfing.",
+                "image": "url_to_image_bondi.jpg",
+                "budget": "$0"
+              },
+              {
+                "name": "Royal Botanic Garden",
+                "description": "Beautiful gardens with diverse plant species.",
+                "image": "url_to_image_botanicgarden.jpg",
+                "budget": "$0"
+              },
+              {
+                "name": "Taronga Zoo",
+                "description": "Popular zoo with diverse animal exhibits.",
+                "image": "url_to_image_taronga.jpg",
+                "budget": "$45"
+              }
+            ],
+            "accommodations": [
+              {
+                "name": "Park Hyatt Sydney",
+                "description": "Luxury hotel with stunning views of the Opera House.",
+                "image": "url_to_image_parkhyatt.jpg",
+                "price_range": "$700 - $1000"
+              },
+              {
+                "name": "The Darling",
+                "description": "Stylish hotel in Pyrmont.",
+                "image": "url_to_image_darling.jpg",
+                "price_range": "$300 - $500"
+              },
+              {
+                "name": "Sydney Harbour YHA",
+                "description": "Budget-friendly hostel with amazing views.",
+                "image": "url_to_image_yha_sydney.jpg",
+                "price_range": "$30 - $70"
+              },
+              {
+                "name": "Sheraton Grand Sydney Hyde Park",
+                "description": "Luxury hotel located near Hyde Park.",
+                "image": "url_to_image_sheraton.jpg",
+                "price_range": "$250 - $400"
+              },
+              {
+                "name": "QT Sydney",
+                "description": "Boutique hotel with a vibrant atmosphere.",
+                "image": "url_to_image_qt.jpg",
+                "price_range": "$200 - $350"
+              }
+            ],
+            "dining_options": [
+              {
+                "name": "Quay",
+                "description": "Award-winning restaurant with stunning views.",
+                "image": "url_to_image_quay.jpg",
+                "price_range": "$150 - $300"
+              },
+              {
+                "name": "Rockpool Bar & Grill",
+                "description": "Famous steakhouse with high-quality meats.",
+                "image": "url_to_image_rockpool.jpg",
+                "price_range": "$50 - $150"
+              },
+              {
+                "name": "Cafe Sydney",
+                "description": "Known for its seafood and stunning harbor views.",
+                "image": "url_to_image_cafe_sydney.jpg",
+                "price_range": "$40 - $80"
+              },
+              {
+                "name": "Mr. Wong",
+                "description": "Trendy Cantonese restaurant.",
+                "image": "url_to_image_mrwong.jpg",
+                "price_range": "$30 - $70"
+              },
+              {
+                "name": "Chin Chin",
+                "description": "Popular restaurant serving Thai food.",
+                "image": "url_to_image_chinchin.jpg",
+                "price_range": "$20 - $50"
+              }
+            ]
+          },
+          "berlin": {
+            "places_to_visit": [
+              {
+                "name": "Brandenburg Gate",
+                "description": "Iconic neoclassical monument.",
+                "image": "url_to_image_brandenburg.jpg",
+                "budget": "$0"
+              },
+              {
+                "name": "Berlin Wall Memorial",
+                "description": "Historic site commemorating the Berlin Wall.",
+                "image": "url_to_image_berlinwall.jpg",
+                "budget": "$0"
+              },
+              {
+                "name": "Museum Island",
+                "description": "Cultural heritage site with several museums.",
+                "image": "url_to_image_museumisland.jpg",
+                "budget": "$0"
+              },
+              {
+                "name": "Reichstag Building",
+                "description": "Historic government building with a glass dome.",
+                "image": "url_to_image_reichstag.jpg",
+                "budget": "$0"
+              },
+              {
+                "name": "East Side Gallery",
+                "description": "Open-air gallery on a section of the Berlin Wall.",
+                "image": "url_to_image_eastsidgallery.jpg",
+                "budget": "$0"
+              }
+            ],
+            "accommodations": [
+              {
+                "name": "Hotel Adlon Kempinski",
+                "description": "Luxury hotel near Brandenburg Gate.",
+                "image": "url_to_image_adlon.jpg",
+                "price_range": "$500 - $900"
+              },
+              {
+                "name": "25hours Hotel Bikini Berlin",
+                "description": "Trendy hotel with a rooftop terrace.",
+                "image": "url_to_image_bikini.jpg",
+                "price_range": "$150 - $300"
+              },
+              {
+                "name": "MEININGER Hotel Berlin Mitte",
+                "description": "Budget-friendly hotel in central Berlin.",
+                "image": "url_to_image_meininger.jpg",
+                "price_range": "$30 - $80"
+              },
+              {
+                "name": "The Ritz-Carlton Berlin",
+                "description": "Elegant hotel in Potsdamer Platz.",
+                "image": "url_to_image_ritzberlin.jpg",
+                "price_range": "$400 - $600"
+              },
+              {
+                "name": "Radisson Blu Hotel, Berlin",
+                "description": "Modern hotel with an aquarium in the lobby.",
+                "image": "url_to_image_radisson.jpg",
+                "price_range": "$250 - $450"
+              }
+            ],
+            "dining_options": [
+              {
+                "name": "Restaurant Tim Raue",
+                "description": "Two Michelin-starred restaurant offering Asian cuisine.",
+                "image": "url_to_image_timraue.jpg",
+                "price_range": "$100 - $300"
+              },
+              {
+                "name": "Café am Neuen See",
+                "description": "Charming café with a lakeside view.",
+                "image": "url_to_image_neuen.jpg",
+                "price_range": "$15 - $30"
+              },
+              {
+                "name": "Mustafa's Gemüse Kebap",
+                "description": "Famous for its döner kebab.",
+                "image": "url_to_image_mustafa.jpg",
+                "price_range": "$5 - $10"
+              },
+              {
+                "name": "Kreuzberger Himmel",
+                "description": "Known for its Syrian cuisine.",
+                "image": "url_to_image_himmel.jpg",
+                "price_range": "$15 - $35"
+              },
+              {
+                "name": "Café Einstein Stammhaus",
+                "description": "Traditional Viennese café.",
+                "image": "url_to_image_einstein.jpg",
+                "price_range": "$10 - $20"
+              }
+            ]
+          },
+          "rome": {
+            "places_to_visit": [
+              {
+                "name": "Colosseum",
+                "description": "Ancient amphitheater and iconic symbol of Rome.",
+                "image": "url_to_image_colosseum.jpg",
+                "budget": "$16"
+              },
+              {
+                "name": "Vatican City",
+                "description": "Small independent city-state and home to the Pope.",
+                "image": "url_to_image_vatican.jpg",
+                "budget": "$0"
+              },
+              {
+                "name": "Trevi Fountain",
+                "description": "Famous Baroque fountain and popular tourist spot.",
+                "image": "url_to_image_trevifountain.jpg",
+                "budget": "$0"
+              },
+              {
+                "name": "Pantheon",
+                "description": "Ancient Roman temple and architectural marvel.",
+                "image": "url_to_image_pantheon.jpg",
+                "budget": "$0"
+              },
+              {
+                "name": "Roman Forum",
+                "description": "Ruins of ancient government buildings.",
+                "image": "url_to_image_forum.jpg",
+                "budget": "$0"
+              }
+            ],
+            "accommodations": [
+              {
+                "name": "Hotel de Russie",
+                "description": "Luxury hotel with a beautiful garden.",
+                "image": "url_to_image_russie.jpg",
+                "price_range": "$600 - $1000"
+              },
+              {
+                "name": "NH Collection Roma Palazzo Cinquecento",
+                "description": "Stylish hotel near Termini Station.",
+                "image": "url_to_image_nhcollection.jpg",
+                "price_range": "$200 - $400"
+              },
+              {
+                "name": "Generator Rome",
+                "description": "Trendy hostel with a rooftop terrace.",
+                "image": "url_to_image_generatorrome.jpg",
+                "price_range": "$30 - $80"
+              },
+              {
+                "name": "The Inn at the Roman Forum",
+                "description": "Charming hotel located near ancient ruins.",
+                "image": "url_to_image_inn.jpg",
+                "price_range": "$250 - $400"
+              },
+              {
+                "name": "Rome Marriott Park Hotel",
+                "description": "Modern hotel with spacious rooms.",
+                "image": "url_to_image_marriottrome.jpg",
+                "price_range": "$150 - $300"
+              }
+            ],
+            "dining_options": [
+              {
+                "name": "Roscioli",
+                "description": "Famous deli and restaurant known for its Italian dishes.",
+                "image": "url_to_image_roscioli.jpg",
+                "price_range": "$30 - $70"
+              },
+              {
+                "name": "Piperno",
+                "description": "Traditional Roman restaurant serving classic dishes.",
+                "image": "url_to_image_piperno.jpg",
+                "price_range": "$20 - $50"
+              },
+              {
+                "name": "La Pergola",
+                "description": "Three Michelin-starred restaurant with stunning views.",
+                "image": "url_to_image_lapergola.jpg",
+                "price_range": "$100 - $500"
+              },
+              {
+                "name": "Trattoria Da Enzo al 29",
+                "description": "Cozy trattoria serving authentic Roman cuisine.",
+                "image": "url_to_image_enzo.jpg",
+                "price_range": "$20 - $40"
+              },
+              {
+                "name": "Da Francesco",
+                "description": "Popular restaurant known for its pizza.",
+                "image": "url_to_image_dafrancesco.jpg",
+                "price_range": "$10 - $20"
+              }
+            ]
+          },
+          "barcelona": {
+            "places_to_visit": [
+              {
+                "name": "Sagrada Familia",
+                "description": "Famous basilica designed by Antoni Gaudí.",
+                "image": "url_to_image_sagrada.jpg",
+                "budget": "$26"
+              },
+              {
+                "name": "Park Güell",
+                "description": "Colorful park also designed by Antoni Gaudí.",
+                "image": "url_to_image_parkgue.jpg",
+                "budget": "$10"
+              },
+              {
+                "name": "La Rambla",
+                "description": "Famous street in the heart of the city.",
+                "image": "url_to_image_larambla.jpg",
+                "budget": "$0"
+              },
+              {
+                "name": "Gothic Quarter",
+                "description": "Historic district with narrow medieval streets.",
+                "image": "url_to_image_gothicquarter.jpg",
+                "budget": "$0"
+              },
+              {
+                "name": "Casa Batlló",
+                "description": "Another iconic Gaudí building.",
+                "image": "url_to_image_casabattlo.jpg",
+                "budget": "$25"
+              }
+            ],
+            "accommodations": [
+              {
+                "name": "Hotel Arts Barcelona",
+                "description": "Luxury hotel with stunning sea views.",
+                "image": "url_to_image_arts.jpg",
+                "price_range": "$400 - $700"
+              },
+              {
+                "name": "The Hoxton, Barcelona",
+                "description": "Stylish hotel in a vibrant neighborhood.",
+                "image": "url_to_image_hoxton_barcelona.jpg",
+                "price_range": "$200 - $400"
+              },
+              {
+                "name": "Generator Barcelona",
+                "description": "Trendy hostel with a lively atmosphere.",
+                "image": "url_to_image_generatorbarcelona.jpg",
+                "price_range": "$30 - $80"
+              },
+              {
+                "name": "W Barcelona",
+                "description": "Iconic sail-shaped hotel on the beach.",
+                "image": "url_to_image_wbarcelona.jpg",
+                "price_range": "$300 - $600"
+              },
+              {
+                "name": "Catalonia Passeig de Gràcia",
+                "description": "Modern hotel in a central location.",
+                "image": "url_to_image_catalonia.jpg",
+                "price_range": "$150 - $300"
+              }
+            ],
+            "dining_options": [
+              {
+                "name": "Tickets",
+                "description": "Innovative tapas restaurant by chef Albert Adrià.",
+                "image": "url_to_image_tickets.jpg",
+                "price_range": "$100 - $300"
+              },
+              {
+                "name": "Cal Pep",
+                "description": "Popular tapas bar with a lively atmosphere.",
+                "image": "url_to_image_calpep.jpg",
+                "price_range": "$30 - $60"
+              },
+              {
+                "name": "Cinc Sentits",
+                "description": "Contemporary Catalan restaurant with creative dishes.",
+                "image": "url_to_image_cincsentits.jpg",
+                "price_range": "$50 - $150"
+              },
+              {
+                "name": "El Celler de Can Roca",
+                "description": "Three Michelin-starred restaurant known for its fine dining.",
+                "image": "url_to_image_celler.jpg",
+                "price_range": "$150 - $500"
+              },
+              {
+                "name": "Mercat de Sant Josep de la Boqueria",
+                "description": "Famous market with a variety of local foods.",
+                "image": "url_to_image_boqueria.jpg",
+                "price_range": "$5 - $50"
+              }
+            ]
+          }
+        }
+      }
+    ]
+  }
+  
