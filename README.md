@@ -92,3 +92,15 @@ Your Ultimate Travel Companion
 - **Booking Features**: Allow direct booking for accommodations and activities.
 
 ---
+![image](https://github.com/user-attachments/assets/9562c66d-6e0c-43d7-8d1d-193f80a25adc)
+![image](https://github.com/user-attachments/assets/c4b7930e-ea5e-4179-95f8-f910c0c60e72)
+![image](https://github.com/user-attachments/assets/d07d8aab-5f59-4eb3-b783-db1798c65312)
+![image](https://github.com/user-attachments/assets/77f1c55a-1b9b-42aa-b977-172961e5e001)
+![image](https://github.com/user-attachments/assets/386033e1-511d-4cc6-82ed-0b246146afcd)
+![image](https://github.com/user-attachments/assets/d5b61e9a-6bde-4655-aca5-e429d296f99a)
+
+
+
+
+
+
